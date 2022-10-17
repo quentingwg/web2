@@ -1,0 +1,20 @@
+### render all films
+@baseUrl= http://localhost:3000
+GET {{baseUrl}}/films/2
+
+
+###render a film by its id
+GET {{baseUrl}}/films/?minimum-duration=200
+
+###create a new Film
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+    "title":"Scarface",
+    "duration": "300",
+    "budget": "300",
+    "link": "linkScarface"   
+}
+
+
